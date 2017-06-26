@@ -1,12 +1,10 @@
 function changeHeading(ev) {
-    
-    ev.target.textContent = 'clickety click'
+    ev.preventDefault()
+    const f = ev.target
+    const name = f.personName.value
+    const heading = document.querySelector('hi')
+    heading.textContent = name
 }
 
-const btn = document.querySelector('button')
-
-btn.addEventListener('click', function(){
-    changeHeading('So Fancy')}) 
-
-const p = document.querySelector('p#instructions')
-p.addEventListener('click', changeHeading)
+const personform = document.querySelector('#person-form')
+personform.addEventListener('submit', changeHeading)
