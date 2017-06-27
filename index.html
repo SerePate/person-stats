@@ -6,18 +6,31 @@
     <title>Person Stats</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.0/css/foundation.min.css">
+    <link rel="sytlesheet" href="index.css">
   </head>
+
   <body>
     <h1>Person Stats</h1>
 
     <form id="person-form">
-        <p>
-         <label for="personName">Name</label>
-         <input type="text" name="personName">
-        </p> 
-        <button type="submit">Go</button>
+      <p>
+        <label for="personName">Name</label>
+        <input type="text" name="personName">
+
+        <label for="stats">Favorite color?</label>        
+        <input type="More" name="favColor">
+      </p>
+      <button type="submit">Go</button>
     </form>
+
+    <div id="stats">
+      <p>
+        <label for="stats">Just Wait!</label>
+        
+      </p>
+    </div>
     
-    <script src = "index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
