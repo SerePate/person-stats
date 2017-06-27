@@ -13,6 +13,18 @@ function changeHeading(ev) {
   paragraph.innerHTML = name + "    " + writeColor
 
   paragraph.style.color = writeColor; 
+
+  const list = document.createElement('ul')
+
+  const nameItem = document.createElement('li')
+  nameItem.textContent = `1Name: ${name}`
+  list.appendChild(nameItem)
+
+  const colorItem = document.createElement('li')
+  colorItem.textContent= `Favorite Color: ${Writecolor}`
+  list.appendChild(colorItem)
+
+   
   
   
 }
