@@ -7,16 +7,16 @@ function renderColor(color){
   return colorDiv
 }
 
-function renderListItem(age, name, nameItem, ageItem){
+function renderListItem(age, name){
 
   const nameList = document.createElement('li')
-  ageList.textContent = `Name: ${name}`
-  nameItem.appendChild(nameList)
+  nameList.textContent = `Name: ${name}`
  
 
   const ageList = document.createElement('li')
   ageList.textContent = `Age: ${age}`
-  ageItem.appendChild(ageList)
+
+  return nameList, ageList
   
 }
 
@@ -31,12 +31,14 @@ function renderList(ev){
   const div = document.querySelector('#stats')
 
   const nameItem = document.createElement('li')
-  nameItem.textContent = `Name: ${name}`
+  const nameList = renderListItem(name, age)
+  nameItem.appendChild(nameList)
   list.appendChild(nameItem)
  
 
   const ageItem = document.createElement('li')
-  ageItem.textContent = `Age: ${age}`
+  const ageList = renderListItem(name,age)
+  ageItem.appendChild(ageList)
   list.appendChild(ageItem)
 
 
