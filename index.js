@@ -18,6 +18,10 @@ function renderListItem(nameItem, ageItem, age, name){
   ageItem.appendChild(ageList)
 }
 
+function renderList(){
+  
+}
+
 function handleSubmit(ev) {
   ev.preventDefault()
   const f = ev.target
@@ -44,6 +48,7 @@ function handleSubmit(ev) {
   renderListItem(nameItem, ageItem)
 
   list.appendChild(nameItem)
+  
   list.appendChild(ageItem)
 
   list.appendChild(colorItem)
