@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function renderColor(color, colorItem){
 
   const colorDiv = document.createElement('div')
